@@ -16,6 +16,26 @@
         height: 800px;
         opacity: 0.5;
     }
+
+    .bg-img-1 {
+        background: url("./assets/main-truck.webp") no-repeat center center;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-size: cover;
+        width: 100%;
+        height: 800px;
+    }
+
+    @media (max-width: 768px) {
+        .bg-img-1 {
+            height: 400px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .bg-img-1 {
+            height: 400px;
+        }
+    }
 </style>
 
 
@@ -115,10 +135,38 @@
     </header>
 
     <main>
+
         <section class="bg-dark">
+            <div class="container-fluid bg-img-1 ">
+
+                <div class="container box">
+                    <div>
+
+                        <p class="text-danger fs-3 " style="color: #ff7d0a !important; font-weight: 800 !important;">
+                            Welcome to Mondson Trucking
+                        </p>
+                        <h1 class="text-white">Speedy, Reliable Delivery for Your Freight</h1>
+                        <p>At Mondson Trucking, We deliver your freight quickly and reliably, ensuring your goods reach
+                            their destination safely and on time.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-2 pb-3"><button type="button"
+                                class="btn btn-outline-dark text-white">Get
+                                Started</button>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button type="button" class="btn btn-dark">Our Services</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="bg-dark py-5">
 
             <div class="">
-                <img class="img-fluid" src="./assets/main-truck.webp" alt="">
+                <!-- <img class="img-fluid" src="./assets/main-truck.webp" alt=""> -->
 
                 <div class="container mt-5">
                     <img class="img-fluid" src="./assets/2nd-truck.webp" alt="">
@@ -702,9 +750,27 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="./gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+
+
+        gsap.from('.box', {
+            scrollTrigger: '.box', // start animation when ".box" enters the viewport
+            y: 500,
+            // opacity: 0,
+            duration: 1
+        });
+    </script>
 </body>
 
 </html>
