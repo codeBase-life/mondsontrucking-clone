@@ -128,3 +128,10 @@ gsap.from(".five-box6", {
   opacity: 0,
   duration: 3,
 });
+gsap.from(".five-box7", {
+  scrollTrigger: ".five-box7",
+
+  y: 30,
+  opacity: 0,
+  duration: 3,
+});
