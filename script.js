@@ -135,3 +135,18 @@ gsap.from(".five-box7", {
   opacity: 0,
   duration: 3,
 });
+
+gsap.from(".six-box1", {
+  scrollTrigger: ".five-box1",
+
+  y: 30,
+  opacity: 0,
+  duration: 3,
+});
+gsap.from(".seven-box1", {
+  scrollTrigger: ".seven-box1",
+
+  y: 30,
+  opacity: 0,
+  duration: 3,
+});
