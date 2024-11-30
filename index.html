@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Mondson Trucking</title>
@@ -18,12 +23,18 @@
     }
 
     .bg-img-1 {
-        background: url("./assets/main-truck.webp") no-repeat center center;
-        background-color: rgba(0, 0, 0, 0.4);
+        background: url("./assets/main-truck-mask.png") no-repeat center center;
+        background-color: rgba(0, 0, 0, 0.1);
+        /* opacity: 0.5; */
         background-size: cover;
-        width: 100%;
-        height: 800px;
+        /* width: 100%; */
+        /* height: 800vh; */
+        min-height: 600px;
     }
+
+
+
+
 
     @media (max-width: 768px) {
         .bg-img-1 {
@@ -35,6 +46,13 @@
         .bg-img-1 {
             height: 400px;
         }
+    }
+
+    .main-heading {
+        font-family: "Michroma", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        word-wrap: break-word;
     }
 </style>
 
@@ -137,18 +155,20 @@
     <main>
         <!-- 1st section -->
         <section class="bg-dark">
-            <div class="container-fluid bg-img-1 ">
+            <!-- <div class="container-fluid bg-img-1 ">
 
-                <div class="container box">
-                    <div>
+                <div class="container box py-5 float-start">
+                    <div class="container">
 
                         <p class="text-danger fs-3 " style="color: #ff7d0a !important; font-weight: 800 !important;">
                             Welcome to Mondson Trucking
                         </p>
-                        <h1 class="text-white">Speedy, Reliable Delivery for Your Freight</h1>
+                        <h1 class="text-white main-heading">Speedy, Reliable Delivery for Your Freight</h1>
                         <p>At Mondson Trucking, We deliver your freight quickly and reliably, ensuring your goods reach
                             their destination safely and on time.</p>
                     </div>
+
+
                     <div class="row">
                         <div class="col-12 col-md-2 pb-3"><button type="button"
                                 class="btn btn-outline-dark text-white">Get
@@ -160,6 +180,28 @@
                         </div>
                     </div>
 
+                </div>
+            </div> -->
+            <div class="container-fluid ">
+
+                <div class="row bg-img-1 ">
+                    <div class="col py-5">
+                        <div class="row">
+                            <div class=" col- col-md-8">
+
+                                <p class="fs-4 text-danger" style="letter-spacing: .1rem;">Welcome to Mondson Trucking
+                                </p>
+                                <h1 class="display-2 main-heading">Speedy, Reliable Delivery for Your Freight</h1>
+                                <p class="h5 me-lg-5">At Mondson Trucking, We deliver your
+                                    freight
+                                    quickly and reliably,
+                                    ensuring your
+                                    goods
+                                    reach
+                                    their destination safely and on time.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -713,7 +755,7 @@
             </div>
 
         </section>
-
+        <!-- 8th section -->
         <section class="bg-dark py-5 overflow-x-hidden">
             <div class="container-fluid">
                 <div class="row gx-5 ">
