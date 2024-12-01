@@ -52,8 +52,38 @@
     }
 
     .custom-icon:hover {
-        /* color: red; */
+
         background-color: red;
+        transition: 0.3s;
+    }
+
+    .font-michroma {
+        font-family: "Michroma", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: x-small;
+    }
+
+    .button-rounded {
+        background-color: red;
+        padding: 5px 25px;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .button-rounded:hover {
+        transition: 0.3s;
+        color: black;
+        background-color: #ffffff;
+    }
+
+    .policy-page {
+        opacity: 0.5;
+    }
+
+    .policy-page:hover {
+        opacity: 1;
         transition: 0.3s;
     }
 
@@ -102,7 +132,7 @@
 <body class="text-white ">
     <header>
         <!-- social section -->
-        <section class="d-none d-lg-block bg-dark border-bottom">
+        <section class="d-none d-lg-block  border-bottom" style="background-color: #0B1117;">
             <!-- using this container bcz container is used already in whole website  -->
             <div class="container pt-3 pb-3">
 
@@ -129,13 +159,13 @@
                             <a href="https://web.facebook.com" target="_blank" class="text-decoration-none me-2">
                                 <i class="fa-brands fa-facebook fa-xs rounded-circle p-2 custom-icon"></i>
                             </a>
-                            <a href="" class="text-decoration-none me-2">
+                            <a href="https://twitter.com" target="_blank" class="text-decoration-none me-2">
                                 <i class="fa-brands fa-twitter fa-xs rounded-circle p-2 custom-icon"></i>
                             </a>
-                            <a href="" class="text-decoration-none me-2">
+                            <a href="https://www.youtube.com/" target="_blank" class="text-decoration-none me-2">
                                 <i class="fa-brands fa-youtube fa-xs rounded-circle p-2 custom-icon"></i>
                             </a>
-                            <a href="" class="text-decoration-none me-2">
+                            <a href="https://pk.linkedin.com/" target="_blank" class="text-decoration-none me-2">
                                 <i class="fa-brands fa-linkedin-in fa-xs rounded-circle p-2 custom-icon"></i>
                             </a>
 
@@ -143,55 +173,12 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="container-fluid  bg-dark p-1 ">
-                <div class="container d-flex justify-content-between">
-                    <div>
 
-                        <div class="row text-white">
-                            <div class="col-6">
-                                <span><img class="img-fluid" src="./assets/location.png" alt="" width="30px">
-
-                                </span>
-                                <span> 222 Strickland AVE Blackshear, GA, 31516</span>
-
-                            </div>
-                            <div class="col-6">
-
-                                <span><img class="img-fluid" src="./assets/mail.png" alt="" width="30px"></span>
-                                <span>Dispatch@mondsontrucking.com </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col">
-
-                            <span>
-                                <img class="text-white" src="./assets/facebook.png" alt="">
-                            </span>
-                        </div>
-                        <div class="col">
-
-                            <span>
-                                <img src="./assets/twitter.png" alt="">
-                            </span>
-                        </div>
-                        <div class="col">
-
-                            <span><img src="./assets/linkedin.png" alt=""></span>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <hr class="m-0"> -->
         </section>
 
 
         <!-- header with links -->
-        <section class="bg-dark p-3">
+        <section class=" p-3" style="background-color: #0B1117;">
             <div class="container p-0">
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid">
@@ -203,8 +190,8 @@
                             <!-- <span class="navbar-toggler-icon"></span> -->
                             <span><img src="./assets/menu-bar.png" alt="" width="30px"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="collapse navbar-collapse justify-content-center pe-3" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 font-michroma w-100 d-flex justify-content-between">
                                 <li class="nav-item">
                                     <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                                 </li>
@@ -215,21 +202,25 @@
                                     <a class="nav-link text-white" href="#">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Why Choose Us </a>
+                                    <a class="nav-link text-white" href="#">Why Choose Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#">Testimonials</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="./privacypolicy.html">Privacy Policy</a>
+                                    <a class="nav-link text-white policy-page" href="./privacypolicy.html">Privacy
+                                        Policy</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#">Contact Us</a>
                                 </li>
-
                             </ul>
-                            <button type="button" class="btn btn-danger">Get Started</button>
-
+                            <button type="button" class="button-rounded d-md-none d-sm-block ">Get
+                                Started</button>
+                        </div>
+                        <div class=" d-none d-lg-block d-flex justify-content-center ">
+                            <button type="button" class="button-rounded ">Get
+                                Started</button>
                         </div>
                     </div>
                 </nav>
