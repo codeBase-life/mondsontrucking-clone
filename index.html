@@ -31,6 +31,18 @@
         margin: 0;
     }
 
+    .font-monorope-1 {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        /* line-height: 29px; */
+        font-style: normal;
+        font-size: 18px;
+        color: #FF493B;
+        letter-spacing: 4px;
+        margin: 0;
+    }
+
     .col-auto {
         flex: 0 0 auto;
     }
@@ -40,14 +52,14 @@
         color: #ffffff;
         border: 1px solid #ffffff;
         padding: 6px;
-        /* Adjust this value as needed */
+
         display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 30px;
-        /* Adjust this value as needed */
+
         height: 30px;
-        /* Adjust this value as needed */
+
 
     }
 
@@ -97,13 +109,28 @@
 
     .bg-img-1 {
         background: url("./assets/main-truck-mask.png") no-repeat center center;
-        background-color: rgba(0, 0, 0, 0.1);
-        /* opacity: 0.5; */
-        background-size: cover;
 
-        min-height: 600px;
+        background-size: cover;
+        position: relative;
+
     }
 
+    .bg-img-1::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.7);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .bg-img-1>* {
+        position: relative;
+        z-index: 2;
+    }
 
 
 
@@ -122,9 +149,71 @@
 
     .main-heading {
         font-family: "Michroma", sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-style: normal;
         word-wrap: break-word;
+        line-height: 70px;
+        font-size: 57px;
+        padding: 20px 0px;
+
+    }
+
+    /* section1 css */
+    .sec1-para {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 30px;
+        width: 500px;
+        color: white;
+        margin: 0;
+    }
+
+    @media (max-width: 767.98px) {
+        .main-heading {
+            font-size: 45px;
+            line-height: 55px;
+        }
+
+        .sec1-para {
+            font-size: 18px;
+            line-height: 30px;
+            width: 100%;
+        }
+    }
+
+    .sec1-btn1 {
+        background-color: transparent;
+        padding: 8px 23px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-sizing: border-box;
+        transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+    }
+
+    .sec1-btn1:hover {
+        background-color: #FF493B;
+        color: black;
+        border-color: #FF493B;
+        /* Change border color to match background */
+    }
+
+    .sec1-btn2 {
+        background-color: #ffffff;
+        color: black;
+        padding: 8px 24px 9px 24px;
+        border: none;
+        border-radius: 20px;
+        box-sizing: border-box;
+
+    }
+
+    .sec1-btn2:hover {
+        background-color: #FF493B;
+        color: white;
+        transition: 0.6s;
     }
 </style>
 
@@ -236,70 +325,35 @@
 
     <main>
         <!-- 1st section -->
-        <section class="bg-dark">
-            <!-- <div class="container-fluid bg-img-1 ">
+        <section>
 
-                <div class="container box py-5 float-start">
-                    <div class="container">
-
-                        <p class="text-danger fs-3 " style="color: #ff7d0a !important; font-weight: 800 !important;">
-                            Welcome to Mondson Trucking
-                        </p>
-                        <h1 class="text-white main-heading">Speedy, Reliable Delivery for Your Freight</h1>
-                        <p>At Mondson Trucking, We deliver your freight quickly and reliably, ensuring your goods reach
-                            their destination safely and on time.</p>
+            <div class="container-fluid bg-img-1 h-100 h-md-75 h-lg-50"">
+                <div class=" row ">
+                    <div class=" col-12 col-md-10 col-lg-9 pt-5 p-3 px-md-5">
+                <div class="row">
+                    <div class="col-md-8 text-left">
+                        <p class="font-monorope-1">Welcome to Mondson Trucking</p>
+                        <h1 class="display-2 main-heading">Speedy, Reliable Delivery for Your Freight</h1>
+                        <p class="sec1-para">At Mondson Trucking, We deliver your freight quickly and reliably,
+                            ensuring your goods reach their destination safely and on time.</p>
                     </div>
 
-
-                    <div class="row">
-                        <div class="col-12 col-md-2 pb-3"><button type="button"
-                                class="btn btn-outline-dark text-white">Get
+                    <div class="row my-3">
+                        <div class=" col-6 col-md-6 col-lg-3 pb-3 pb-md-0">
+                            <button type="button" class="sec1-btn1  mb-md-0">Get
                                 Started</button>
                         </div>
-                        <div class="col-12 col-md-2">
-                            <button type="button" class="btn btn-dark">Our Services</button>
-
+                        <div class="col-6 col-md-6 col-lg-3 pb-3 pb-lg-0">
+                            <button type="button" class="sec1-btn2">Our Services</button>
                         </div>
-                    </div>
-
-                </div>
-            </div> -->
-
-            <div class="container-fluid bg-img-1 ">
-
-                <div class="row ">
-                    <div class="col pt-5 p-3 px-md-5">
-                        <div class="row">
-                            <div class="  col-md-8">
-
-                                <p class="fs-4 text-danger" style="letter-spacing: .1rem;">Welcome to Mondson Trucking
-                                </p>
-                                <h1 class="display-2 main-heading">Speedy, Reliable Delivery for Your Freight</h1>
-                                <p class="h5 me-lg-5">At Mondson Trucking, We deliver your
-                                    freight
-                                    quickly and reliably,
-                                    ensuring your
-                                    goods
-                                    reach
-                                    their destination safely and on time.</p>
-                            </div>
-
-                            <div class="row my-3 ">
-
-                                <div class="col-12 col-md-2 pb-3 pb-md-0">
-                                    <button type="button" class="btn btn-outline-dark text-white w-100">Get
-                                        Started</button>
-                                </div>
-                                <div class="col-12 col-md-2">
-                                    <button type="button" class="btn btn-dark w-100">Our Services</button>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
+            </div>
+            </div>
         </section>
+
+
         <!-- 2nd section -->
         <section class="bg-dark py-5">
 
