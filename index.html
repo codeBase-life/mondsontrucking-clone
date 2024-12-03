@@ -215,6 +215,37 @@
         color: white;
         transition: 0.5s;
     }
+
+    /* section with bg img */
+    .sec-img {
+        background-image: url("./assets/2nd-truck.webp");
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 576px) {
+        .custom-width {
+            width: 55%;
+        }
+    }
+
+    @media (max-width: 778px) {
+        .custom-width {
+            width: 55%;
+        }
+    }
+
+    .inc-num1 {
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-wrap: break-word;
+        line-height: 70px;
+        font-size: 57px;
+        padding: 20px 0px;
+    }
 </style>
 
 
@@ -349,10 +380,24 @@
                     </div>
                 </div>
             </div>
-            </div>
+
+        </section>
+        <!-- koip -->
+        <section class="py-5" style="background-color:#0B1117 ;">
+            <div class="container position-relative sec-img">
+                <div class="row position-absolute w-100 bottom-0">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12  bg-danger p-5 position-relative custom-width">
+                        <h4 class="inc-num1">25+</h4>
+                        <!-- <span class="position-absolute end-0" style="bottom: 35px;">
+                            <div class="vr" style="height: 40px;"></div>
+                        </span> -->
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center bg-danger p-5 custom-width">second</div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center bg-danger p-5 custom-width">third</div>
+                </div>
             </div>
         </section>
-
 
         <!-- 2nd section -->
         <section class="bg-dark py-5">
@@ -360,9 +405,7 @@
             <div class="">
                 <!-- <img class="img-fluid" src="./assets/main-truck.webp" alt=""> -->
 
-                <div class="container mt-5 h-100">
-                    <img class="img-fluid" src="./assets/2nd-truck.webp" alt="">
-                </div>
+
 
                 <div class="container mt-5 pb-5">
                     <div class="row  ">
