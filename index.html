@@ -228,12 +228,14 @@
     @media (max-width: 576px) {
         .custom-width {
             width: 55%;
+            padding: 5px 0px 20px 25px;
         }
     }
 
-    @media (max-width: 778px) {
+    @media (min-width: 778px) {
         .custom-width {
-            width: 55%;
+            /* width: 55%; */
+            padding: 5px 0px 30px 25px;
         }
     }
 
@@ -243,8 +245,17 @@
         font-style: normal;
         word-wrap: break-word;
         line-height: 70px;
-        font-size: 57px;
-        padding: 20px 0px;
+        font-size: 33px;
+        margin: 0;
+    }
+
+    .custom-width p {
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 17px;
+
+        margin: 0;
     }
 </style>
 
@@ -386,15 +397,59 @@
         <section class="py-5" style="background-color:#0B1117 ;">
             <div class="container position-relative sec-img">
                 <div class="row position-absolute w-100 bottom-0">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-12  bg-danger p-5 position-relative custom-width">
-                        <h4 class="inc-num1">25+</h4>
-                        <!-- <span class="position-absolute end-0" style="bottom: 35px;">
-                            <div class="vr" style="height: 40px;"></div>
-                        </span> -->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12    position-relative custom-width"
+                        style="background-color: #FF493B;">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="inc-num1">25+</h4>
+
+                            </div>
+
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+
+                                <p>Years of Experience</p>
+                            </div>
+                        </div>
+                        <span class="position-absolute end-0" style="bottom: 30px;">
+                            <div class="vr" style="height: 60px;"></div>
+                        </span>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center bg-danger p-5 custom-width">second</div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center bg-danger p-5 custom-width">third</div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 position-relative   custom-width "
+                        style="background-color: #FF493B;">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="inc-num1">950+</h4>
+
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+
+                                <p>Satisfied Clients</p>
+                            </div>
+                        </div>
+                        <span class="position-absolute end-0" style="bottom: 30px;">
+                            <div class="vr" style="height: 60px;"></div>
+                        </span>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 position-relative   custom-width"
+                        style="background-color: #FF493B;">
+                        <div class="row">
+                            <div class="col">
+
+                                <h4 class="inc-num1">1.5M+</h4>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+
+                                <p>Shipments Delivered</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
