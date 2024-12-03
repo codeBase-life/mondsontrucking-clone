@@ -257,6 +257,72 @@
 
         margin: 0;
     }
+
+    /* 3rd section */
+    .third-para1 {
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        color: #FF493B;
+        letter-spacing: 4px;
+        margin: 0;
+    }
+
+    .box1 h2 {
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-wrap: break-word;
+        line-height: 70px;
+        font-size: 50px;
+        padding: 20px 0px;
+    }
+
+    @media (max-width: 576px) {
+        .box1 h2 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+
+    .third-para2 {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 30px;
+
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .third-h3 {
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-wrap: break-word;
+        line-height: 60px;
+        font-size: 25px;
+        padding: 5px 0px;
+    }
+
+    .third-p {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 576px) {
+        .third-border {
+            border-bottom: 1px solid rgb(255, 254, 253, 0.2);
+            margin-bottom: 5px;
+        }
+    }
 </style>
 
 
@@ -393,7 +459,7 @@
             </div>
 
         </section>
-        <!-- koip -->
+        <!-- 2nd section -->
         <section class="py-5" style="background-color:#0B1117 ;">
             <div class="container position-relative sec-img">
                 <div class="row position-absolute w-100 bottom-0">
@@ -454,65 +520,64 @@
             </div>
         </section>
 
-        <!-- 2nd section -->
-        <section class="bg-dark py-5">
-
-            <div class="">
-                <!-- <img class="img-fluid" src="./assets/main-truck.webp" alt=""> -->
+        <!-- 3rd section -->
+        <section class=" py-5" style="background-color: #0B1117;">
 
 
+            <div class="container ">
+                <div class="row d-flex ">
+                    <div class="col-12  col-md-6 order-2 order-md-1">
+                        <img class="img-fluid" src="./assets/3rd-truck.webp" alt="">
 
-                <div class="container mt-5 pb-5">
-                    <div class="row  ">
-                        <div class="col-12  col-md-6">
-                            <img class="img-fluid" src="./assets/3rd-truck.webp" alt="">
-
-
-                        </div>
-                        <div class="col-12 order-0 col-md-6 order-md-1 box1">
-                            <div class=" mt-5">
-                                <p class="fs-4 text-danger font-monospace">About Mondson Trucking</p>
-                                <p class="fs-1 text-white font-monospace">Commitment to Excellence</p>
-
-
-                                <p class="text-start text-white font-monospace fs-5">Mondson Trucking, a proud
-                                    family-owned business based
-                                    in Georgia, is led by Mr. Setrol Mondson. Specializing in OTR (over-the-road)
-                                    transportation, the company operates a fleet of 53-foot reefer units, ensuring that
-                                    fresh freight reaches its destination with the highest standards of care. With a
-                                    commitment to reliability and customer satisfaction, Mondson Trucking has become a
-                                    trusted name in the industry, delivering quality service with a personal touch.
-                                    Whether it’s produce or perishable goods, the company is dedicated to keeping
-                                    America’s supply chain moving smoothly.</p>
-
-
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img class="img-fluid" src="./assets/eye.png" width="30px" alt="">
-                                    <p class="text-white font-monospace fs-3">Our Vision </p>
-                                    <p class="text-white font-monospace fs-6">Our vision is to be the leading trusted
-                                        partner in fresh freight transportation. </p>
-                                </div>
-
-                                <div class="col-6">
-                                    <img class="img-fluid" src="./assets/flag.png" alt="" width="30px">
-                                    <p class="text-white font-monospace fs-3">
-                                        Our Mission
-                                    </p>
-                                    <p class="text-white font-monospace fs-6"> Our mission is to deliver fresh goods on
-                                        time with reliability and exceptional service. </p>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
+                    <div class="col-12 order-1 col-md-6 order-md-2 box1">
+                        <div class=" mt-5">
+                            <p class="third-para1">ABOUT MONDSON TRUCKING</p>
+                            <h2>Commitment to Excellence</h2>
+
+
+                            <p class="third-para2">Mondson Trucking, a proud
+                                family-owned business based
+                                in Georgia, is led by Mr. Setrol Mondson. Specializing in OTR (over-the-road)
+                                transportation, the company operates a fleet of 53-foot reefer units, ensuring that
+                                fresh freight reaches its destination with the highest standards of care. With a
+                                commitment to reliability and customer satisfaction, Mondson Trucking has become a
+                                trusted name in the industry, delivering quality service with a personal touch.
+                                Whether it’s produce or perishable goods, the company is dedicated to keeping
+                                America’s supply chain moving smoothly.</p>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <i class="fa-regular fa-eye fa-lg" style="color: #FFD43B;"></i>
+                                <h3 class="third-h3">Our Vision </h3>
+                                <p class="third-p">Our vision is to be the leading trusted
+                                    partner in fresh freight transportation. </p>
+                                <!-- <hr class="third-border"> -->
+                                <p class="third-border"></p>
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <i class="fa-solid fa-flag fa-lg" style="color: #80ff00;"></i>
+                                <h3 class="third-h3">
+                                    Our Mission
+                                </h3>
+                                <p class="third-p"> Our mission is to deliver fresh goods on
+                                    time with reliability and exceptional service. </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </section>
 
-        <!-- 3rd section -->
-        <section class="bg-black pt-5 pb-5">
+        <!-- 4th section -->
+        <section class="py-5" style="background-color: #0F171F;">
 
 
             <div class="row text-center">
