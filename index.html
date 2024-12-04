@@ -386,6 +386,117 @@
         color: white;
         margin-bottom: 20px;
     }
+
+    .section5 h2 {
+
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-wrap: break-word;
+        /* line-height: 70px; */
+        font-size: 50px;
+        padding: 20px 0px;
+    }
+
+    .section5 p:nth-of-type(1) {
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        letter-spacing: 4px;
+
+
+
+    }
+
+    .section5 p:nth-of-type(2) {
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    .section5-btn1 {
+        background-color: transparent;
+        padding: 8px 23px;
+        color: white;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-sizing: border-box;
+        transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+    }
+
+    .section5-btn1:hover {
+        background-color: #0B1117;
+    }
+
+    .section5-btn2 {
+        background-color: #0B1117;
+        color: white;
+        border-radius: 20px;
+        box-sizing: border-box;
+        border: none;
+        padding: 10px 25px;
+        transition: 0.5s;
+    }
+
+    .section5-btn2:hover {
+        background-color: white;
+        color: #0B1117;
+    }
+
+    @media(max-width:700px) {
+        .section5 h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .section5 p:nth-of-type(1) {
+            text-align: center;
+        }
+
+        .section5 p:nth-of-type(2) {
+            text-align: center;
+            font-size: 17px;
+        }
+
+
+    }
+
+    /* section6 */
+    .section6 h2:nth-of-type(1) {
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-wrap: break-word;
+        line-height: 70px;
+        font-size: 44px;
+        padding: 20px 0px;
+    }
+
+    @media (max-width:700px) {
+        .section6 h2:nth-of-type(1) {
+
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+
+    .section6 h3 {
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-wrap: break-word;
+
+        font-size: 20px;
+    }
+
+    .section6 p {
+        font-family: "Manrope", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 17px;
+    }
 </style>
 
 
@@ -776,21 +887,29 @@
         </section>
 
         <!-- 5th section -->
-        <section class="" style="background-color: #0F171F;">
+        <section class="py-5" style="background-color: #0B1117;">
 
 
-            <div class="container bg-danger  ">
-                <div class="row ">
+            <div class="container section5" style="background-color: #FF493B;">
+                <div class="row align-items-center">
                     <div class="col-12 col-md-6 ">
                         <div class="container pt-5 box12">
 
 
-                            <p class="font-monospace fs-5 text-white "> GET STARTED</p>
-                            <p class="font-monospace fs-3 text-white">Your Questions, Our Priority – Contact Us</p>
-                            <p class="font-monospace fs-5 text-white">Reach out to Mondson Trucking for reliable
+                            <p class=""> GET STARTED</p>
+                            <h2 class="">Your Questions, Our Priority – Contact Us</h2>
+                            <p class="">Reach out to Mondson Trucking for reliable
                                 transportation services. We’re here to assist you with any inquiries or needs</p>
-                            <button type="button" class="btn btn-outline-dark text-white">Get Started</button>
-                            <button type="button" class="btn btn-dark">Contact Us</button>
+                            <div class="row">
+                                <div class="col-6 col-md-6 col-lg-4 text-center">
+
+                                    <button type="button" class="section5-btn1">Get Started</button>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-4  text-center">
+                                    <button type="button" class="section5-btn2">Our Services</button>
+
+                                </div>
+                            </div>
 
 
 
@@ -804,14 +923,72 @@
 
         </section>
 
-        <!-- 5th section -->
-        <section class="bg-dark p-5">
-            <div class="container text-center text-white">
-                <p class="font-monospace fs-5 text-danger five-box1">WHY CHOOSE US</p>
-                <h1 class="font-monospace  five-box2">Expert Logistics Shipping for Your Needs</h1>
+        <!-- 6th section -->
+        <section class="section6 py-5" style="background-color: #0B1117;">
+            <div class="row text-center text-white">
+                <div class="col p-0">
+
+                    <p class="five-box1 sec4-p1">WHY CHOOSE US</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 p-0">
+
+                        <h2 class=" five-box2">Expert Logistics Shipping for Your Needs</h2>
+                    </div>
+                </div>
             </div>
 
-            <div class="container ">
+            <div class="container">
+                <div class="row">
+                    <div class="col py-5">
+                        <div class="row">
+                            <div class="col  text-center text-md-end">
+
+                                <img src="./assets/locker.png" alt="" width="40px">
+                                <h3 class="pt-3 pb-3">Dependable Service</h3>
+                                <p>We ensure on-time delivery with our fleet of 53-foot reefer units, maintaining high
+                                    standards
+                                    of care.</p>
+                            </div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col  text-center text-md-end">
+                                <img src="./assets/web.png" alt="" width="40px">
+
+                                <h3 class="pt-3 pb-3">Specialized Equipment </h3>
+                                <p>Our 53-foot reefer units are equipped for over-the-road transportation, ensuring your
+                                    perishable goods arrive fresh.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid w-100 h-100 object-fit-cover pe-3 ps-3" src="./assets/truck-back.webp"
+                            alt="">
+                    </div>
+                    <div class="col py-5">
+                        <div class="row ">
+                            <div class="col  text-center text-md-start">
+
+                                <img src="./assets/clock.png" alt="" width="40px">
+                                <h3 class="pt-3 pb-3"> Family-Owned Business </h3>
+                                <p>As a family-owned business, we prioritize customer satisfaction and treat each
+                                    shipment with personalized attention. </p>
+                            </div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col  text-center text-md-start">
+                                <img src="./assets/money-bag.png" alt="" width="40px">
+                                <h3 class="pt-3 pb-3">Specialized Equipment </h3>
+                                <p>Our 53-foot reefer units are equipped for over-the-road transportation, ensuring your
+                                    perishable goods arrive fresh.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container ">
                 <div class="row text-white">
                     <div class="col">
                         <div class="row">
@@ -823,15 +1000,15 @@
                                         <img class="float-md-end float-sm-none mx-auto d-block"
                                             src="./assets/locker.png" alt="" width="30px">
                                     </div>
-                                    <h2 class="p-0 text-md-end text-center"> Dependable Service </h2>
+                                    <h3class="p-0 text-md-end text-center"> Dependable Service </h3>
 
 
-                                    <p class="font-monospace text-white fs-5 p-0 text-md-end text-center"> We ensure
-                                        on-time
-                                        delivery with
-                                        our fleet
-                                        of
-                                        53-foot reefer units, maintaining high standards of care. </p>
+                                        <p class="font-monospace text-white fs-5 p-0 text-md-end text-center"> We ensure
+                                            on-time
+                                            delivery with
+                                            our fleet
+                                            of
+                                            53-foot reefer units, maintaining high standards of care. </p>
                                 </div>
 
                             </div>
@@ -848,7 +1025,7 @@
                                         <img class="float-md-end float-sm-none mx-auto d-block" src="./assets/web.png"
                                             alt="" width="30px">
                                     </div>
-                                    <h2 class="p-0 text-nowrap text-md-end text-center">Specialized Equipment</h2>
+                                    <h3 class="p-0 text-nowrap text-md-end text-center">Specialized Equipment</h3>
                                     <p class="font-monospace text-white fs-5 p-0 text-md-end text-center"> We ensure
                                         on-time
                                         delivery
@@ -883,7 +1060,7 @@
                                         <img class="float-md-start float-sm-none mx-auto d-block"
                                             src="./assets/locker.png" alt="" width="30px">
                                     </div>
-                                    <h2 class="p-0 text-md-start text-center"> Dependable Service </h2>
+                                    <h3 class="p-0 text-md-start text-center"> Dependable Service </h3>
 
 
                                     <p class="font-monospace text-white fs-5 p-0 text-md-start text-center"> We ensure
@@ -907,7 +1084,7 @@
                                         <img class="float-md-start float-sm-none mx-auto d-block" src="./assets/web.png"
                                             alt="" width="30px">
                                     </div>
-                                    <h2 class="p-0 text-nowrap text-md-start text-center">Specialized Equipment</h2>
+                                    <h3 class="p-0 text-nowrap text-md-start text-center">Specialized Equipment</h3>
                                     <p class="font-monospace text-white fs-5 p-0 text-md-start text-center"> We ensure
                                         on-time delivery
                                         with
@@ -924,10 +1101,10 @@
 
                 </div>
 
-            </div>
+            </div> -->
         </section>
 
-        <!-- 6th section -->
+        <!-- 7th section -->
         <section class="bg-dark py-5">
             <div class="container">
                 <div class="row gx-5">
@@ -1081,7 +1258,7 @@
         </section>
 
 
-        <!-- 7th section  -->
+        <!-- 8th section  -->
         <section class="py-5 bg-dark overflow-x-hidden">
             <div class="container">
                 <div class="row gx-5 align-items-center">
@@ -1147,7 +1324,7 @@
             </div>
 
         </section>
-        <!-- 8th section -->
+        <!-- 9th section -->
         <section class="bg-dark py-5 overflow-x-hidden">
             <div class="container-fluid">
                 <div class="row gx-5 ">
