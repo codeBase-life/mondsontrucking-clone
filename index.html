@@ -103,7 +103,7 @@
         background: url("./assets/front-side.webp") no-repeat center center;
         background-size: cover;
         /* width: 50%; */
-        height: 800px;
+        height: 700px;
         opacity: 0.5;
     }
 
@@ -497,6 +497,171 @@
         font-style: normal;
         font-size: 17px;
     }
+
+    /* section 7 */
+    .section7-col2 p:nth-of-type(1) {
+        font-family: "Manrope", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 17px;
+        letter-spacing: 4px;
+        line-height: 28px;
+        color: #FF493B;
+        margin: 0;
+
+    }
+
+    .section7-col2 h2 {
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-wrap: break-word;
+
+        font-size: 53px;
+        padding: 20px 0px;
+    }
+
+    .section7 {
+        padding: 150px 0px;
+    }
+
+    .section7-col2 p:nth-of-type(2) {
+        font-family: "Manrope", sans-serif;
+
+        font-style: normal;
+        font-size: 16px;
+        line-height: 26px;
+
+    }
+
+    .section7-bg-img {
+        background-image: url("./assets/working.webp");
+        width: 80%;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .section7-carousel {
+        left: 50px;
+        top: 315px;
+    }
+
+    @media(max-width:700px) {
+        .section7-bg-img {
+            width: 300px;
+
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+        .section7-carousel {
+            left: 18px;
+            top: 235px;
+            width: 290px;
+        }
+
+        .section7-col2 h2 {
+
+
+            line-height: 40px;
+            font-size: 25px;
+
+        }
+
+        .section7-col2 .six-box1 {
+            padding-left: 20px;
+        }
+
+        .section7-col2 p:nth-of-type(2) {
+
+            font-size: 11px;
+            line-height: 20px;
+            letter-spacing: 1px;
+
+        }
+
+        .section7 {
+            padding: 0px 0px 100px 0px;
+        }
+    }
+
+    /* section8 */
+    .contact p:nth-of-type(1) {
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        letter-spacing: 4px;
+        color: #FF493B;
+        padding-bottom: 10px;
+    }
+
+    .contact p:nth-of-type(2) {
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 17px;
+
+        padding-bottom: 10px;
+    }
+
+    .section8 h2 {
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        word-wrap: break-word;
+        line-height: 70px;
+        font-size: 50px;
+        padding: 20px 0px;
+    }
+
+    .section8 h3 {
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 17px;
+
+
+    }
+
+    .num {
+        font-family: "Michroma", sans-serif;
+
+        font-size: 20px;
+
+
+    }
+
+    .num:hover {
+        color: #FF493B;
+        transition: 0.3s;
+    }
+
+    .email {
+        font-family: "Michroma", sans-serif;
+
+        font-size: 18px;
+
+
+    }
+
+    .bottom-border {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        /* White border with 30% opacity */
+    }
+
+    .email:hover {
+        color: #FF493B;
+        transition: 0.3s;
+    }
+
+    @media(max-width:700px) {
+        .section8 h2 {
+            line-height: 40px;
+            font-size: 30px;
+        }
+    }
 </style>
 
 
@@ -887,7 +1052,7 @@
         </section>
 
         <!-- 5th section -->
-        <section class="py-5" style="background-color: #0B1117;">
+        <section id="section5" class="py-5" style="background-color: #0B1117;">
 
 
             <div class="container section5" style="background-color: #FF493B;">
@@ -924,7 +1089,7 @@
         </section>
 
         <!-- 6th section -->
-        <section class="section6 py-5" style="background-color: #0B1117;">
+        <section class="section6 py-5" style="background-color: #0B1117; overflow: hidden;">
             <div class="row text-center text-white">
                 <div class="col p-0">
 
@@ -988,269 +1153,52 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="container ">
-                <div class="row text-white">
-                    <div class="col">
-                        <div class="row">
-                            <div class="col p-0 ">
-                                <div class="five-box3">
 
-
-                                    <div class="clearfix">
-                                        <img class="float-md-end float-sm-none mx-auto d-block"
-                                            src="./assets/locker.png" alt="" width="30px">
-                                    </div>
-                                    <h3class="p-0 text-md-end text-center"> Dependable Service </h3>
-
-
-                                        <p class="font-monospace text-white fs-5 p-0 text-md-end text-center"> We ensure
-                                            on-time
-                                            delivery with
-                                            our fleet
-                                            of
-                                            53-foot reefer units, maintaining high standards of care. </p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <div class="col p-0">
-                                <div class="five-box4">
-
-
-
-                                    <div class="clearfix">
-
-                                        <img class="float-md-end float-sm-none mx-auto d-block" src="./assets/web.png"
-                                            alt="" width="30px">
-                                    </div>
-                                    <h3 class="p-0 text-nowrap text-md-end text-center">Specialized Equipment</h3>
-                                    <p class="font-monospace text-white fs-5 p-0 text-md-end text-center"> We ensure
-                                        on-time
-                                        delivery
-                                        with
-                                        our fleet
-                                        of
-                                        53-foot reefer units, maintaining high standards of care. </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                    <div class="col-12 col-md-4 py-5  h-100 five-box5">
-                        <img class="img-fluid" src="./assets/truck-back.webp" alt="" style="height: 100%;">
-                    </div>
-
-
-
-
-
-                    <div class="col">
-                        <div class="row">
-                            <div class="col p-0 text-sm-center">
-                                <div class="five-box6">
-
-
-
-
-                                    <div class="clearfix">
-                                        <img class="float-md-start float-sm-none mx-auto d-block"
-                                            src="./assets/locker.png" alt="" width="30px">
-                                    </div>
-                                    <h3 class="p-0 text-md-start text-center"> Dependable Service </h3>
-
-
-                                    <p class="font-monospace text-white fs-5 p-0 text-md-start text-center"> We ensure
-                                        on-time delivery
-                                        with
-                                        our fleet
-                                        of
-                                        53-foot reefer units, maintaining high standards of care. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <div class="col p-0">
-                                <div class="five-box7">
-
-
-
-                                    <div class="clearfix">
-
-                                        <img class="float-md-start float-sm-none mx-auto d-block" src="./assets/web.png"
-                                            alt="" width="30px">
-                                    </div>
-                                    <h3 class="p-0 text-nowrap text-md-start text-center">Specialized Equipment</h3>
-                                    <p class="font-monospace text-white fs-5 p-0 text-md-start text-center"> We ensure
-                                        on-time delivery
-                                        with
-                                        our fleet
-                                        of
-                                        53-foot reefer units, maintaining high standards of care. </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
-            </div> -->
         </section>
 
         <!-- 7th section -->
-        <section class="bg-dark py-5">
-            <div class="container">
-                <div class="row gx-5">
+        <section class="section7  " style="background-color: #0B1117; overflow: hidden; ">
+            <div class="row gx-5 h-100 d-flex">
 
-                    <div class="col-12 col-md-6 position-relative overflow-x-hidden">
+                <div class=" col-12 col-md-6  h-100 order-md-1 order-2">
 
-                        <img class="img-fluid w-100" src="./assets/working.webp" alt="">
-                        <!-- carousal -->
-                        <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel"
-                            style="position: absolute;top: 70%; left: 30%;">
-                            <div class="carousel-inner  ">
-                                <div class="carousel-item active">
-                                    <div class="container w-100 z-1">
-                                        <div class=" bg-secondary p-4 rounded row ">
-                                            <div class=" col ">
-                                                <p class=" mb-3">
-                                                    Mondson Trucking’s commitment to quality service is evident in every
-                                                    shipment.
-                                                    Their 53-foot reefer units handle our produce with care, making them
-                                                    a trusted
-                                                    partner in our supply chain.
-                                                </p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <img alt="Portrait of Thomas George" class="rounded-circle me-3"
-                                                    height="50"
-                                                    src="https://storage.googleapis.com/a1aa/image/foOO31owvszZXazfKPue1ZmNxZE2qNxxnRBOGWMIbefOZLmeE.jpg"
-                                                    width="50" />
-                                                <div>
-                                                    <div class="fw-bold">
-                                                        Thomas George
-                                                    </div>
-                                                    <div class="text-danger">
-                                                        Client
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="container-fluid ">
-                                        <div class=" bg-secondary p-4 rounded row ">
-                                            <div class=" col ">
-                                                <p class=" mb-3">
-                                                    Mondson Trucking’s commitment to quality service is evident in every
-                                                    shipment.
-                                                    Their 53-foot reefer units handle our produce with care, making them
-                                                    a trusted
-                                                    partner in our supply chain.
-                                                </p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <img alt="Portrait of Thomas George" class="rounded-circle me-3"
-                                                    height="50"
-                                                    src="https://storage.googleapis.com/a1aa/image/foOO31owvszZXazfKPue1ZmNxZE2qNxxnRBOGWMIbefOZLmeE.jpg"
-                                                    width="50" />
-                                                <div>
-                                                    <div class="fw-bold">
-                                                        Thomas George
-                                                    </div>
-                                                    <div class="text-danger">
-                                                        Client
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="container ">
-                                        <div class=" bg-secondary p-4 rounded row ">
-                                            <div class=" col ">
-                                                <p class=" mb-3">
-                                                    Mondson Trucking’s commitment to quality service is evident in every
-                                                    shipment.
-                                                    Their 53-foot reefer units handle our produce with care, making them
-                                                    a trusted
-                                                    partner in our supply chain.
-                                                </p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <img alt="Portrait of Thomas George" class="rounded-circle me-3"
-                                                    height="50"
-                                                    src="https://storage.googleapis.com/a1aa/image/foOO31owvszZXazfKPue1ZmNxZE2qNxxnRBOGWMIbefOZLmeE.jpg"
-                                                    width="50" />
-                                                <div>
-                                                    <div class="fw-bold">
-                                                        Thomas George
-                                                    </div>
-                                                    <div class="text-danger">
-                                                        Client
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
+                    <div class="container section7-bg-img">
                     </div>
 
-                    <div class="col-12 col-md-6 g-5 pt-sm-5 order-md-1 order-0">
-                        <div class="col">
-
-                            <div class="six-box1">
-
-                                <p class="text-danger font-monospace lead">Testimonials</p>
-
-
-                                <p class="text-white font-monospace text-wrap fs-3">Exceptional Service and Reliability
-
-                                </p>
-
-                                <p class=" font-monospace fs-6">
-
-
-
-
-                                    Our fresh freight on time and in perfect condition. Their personal touch and
-
-                                    professionalism make them a top choice!
-
-                                </p>
-                            </div>
-
-
-                        </div>
-
-                    </div>
 
                 </div>
 
 
+
+
+                <div class="section7-col2 col-12 col-md-6 g-5 pt-sm-5 order-md-2 order-1">
+                    <div class="col">
+
+                        <div class="six-box1">
+
+                            <p class="">Testimonials</p>
+
+
+                            <h2 class="text-wrap">Exceptional Service and Reliability
+
+                            </h2>
+
+                            <p class=" ">
+
+
+
+
+                                Our fresh freight on time and in perfect condition. Their personal touch and
+
+                                professionalism make them a top choice!
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -1259,69 +1207,56 @@
 
 
         <!-- 8th section  -->
-        <section class="py-5 bg-dark overflow-x-hidden">
+        <section class="py-5 section8 " style="background-color: #0B1117;">
             <div class="container">
-                <div class="row gx-5 align-items-center">
+                <div class="row  align-items-center">
                     <div class="col-12 col-md-6">
-                        <div class="seven-box1">
-
-
-
-                            <p class="font-monospace fs-5 text-danger">CONTACT US</p>
-                            <p class="font-monospace fs-3 ">
-
-                                Get in Touch Anytime, Anywhere
-
-                            </p>
-
-
-                            <p class="font-monospace fs-5">Contact us for personalized service and expert transportation
-                                solutions. We’re here to assist you!</p>
-                            <hr>
-                            <div class="row ">
-                                <div class="col">
-                                    <div class="row ">
-                                        <div class="col-2 d-flex text-align-center">
-                                            <img class="img-fluid" src="./assets/phone-call.png" alt="">
-                                        </div>
-                                        <div class="col">
-                                            <p>Our Phone</p>
-                                            <p class="font-monospace fs-3">(855) 518-2854 </p>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
+                        <div class="row bottom-border">
+                            <div class="col contact">
+                                <p>CONTACT US</p>
+                                <h2>Get in Touch Anytime, Anywhere </h2>
+                                <p>Contact us for personalized service and expert transportation solutions. We’re here
+                                    to assist you!</p>
                             </div>
-                            <div class="row py-5">
-                                <div class="col">
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex align-items-center">
+                                <img src="./assets/phone-call.png" alt="" width="40px">
+                                <div style="padding: 20px 0 0 10px;">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        <h3>Our Phone</h3>
 
-                                    <div class="row ">
-                                        <div class="col-2 d-flex text-align-center">
-                                            <img class="img-fluid" src="./assets/email-fill.png" alt="">
-                                        </div>
-                                        <div class="col">
-                                            <p>Our Email</p>
-                                            <p class="font-monospace fs-3">Dispatch@mondsontrucking.com </p>
-                                        </div>
+                                    </a>
+                                    <p class="num">(855) 518-2854 </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex align-items-center ">
+                                    <img src="./assets/email-fill.png" alt="" width="40px">
+                                    <div style="padding: 20px 0 0 10px;">
+                                        <h3>Our Email </h3>
+                                        <a class="text-decoration-none text-white" href="">
+                                            <p class="email">Dispatch@mondsontrucking.com </p>
+
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="col-12 col-md-6 bg-img ">
 
-
-                    <div class="col-12 col-md-6 bg-img "></div>
-
-                    <hr>
-
+                    </div>
                 </div>
+
+
+
+
+
+
             </div>
+
 
         </section>
         <!-- 9th section -->
@@ -1362,7 +1297,7 @@
 
     </main>
 
-    <footer class="bg-dark py-5">
+    <!-- <footer class="bg-dark py-5">
         <section>
             <div class="container">
                 <div class="row">
@@ -1420,7 +1355,7 @@
             </div>
         </section>
 
-    </footer>
+    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
