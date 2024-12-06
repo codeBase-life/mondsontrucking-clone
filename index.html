@@ -686,6 +686,40 @@
             font-size: 10px;
         }
     }
+
+    /* footer */
+    .footer-p {
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        padding: 35px 0 0 0;
+        line-height: 30px;
+    }
+
+    .footer h3 {
+        font-family: "Michroma", sans-serif;
+        font-weight: 500;
+
+
+        font-size: 14px;
+        padding: 5px 0px;
+        line-height: 40px;
+    }
+
+    .footer li {
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+
+        line-height: 50px;
+    }
+
+    .footer li:hover {
+        color: #FF493B;
+        transition: 0.3s;
+    }
 </style>
 
 
@@ -798,29 +832,35 @@
         <!-- 1st section -->
         <section id="section1">
 
-            <div class="container-fluid bg-img-1 h-100 h-md-75 h-lg-50"">
-                <div class=" row ">
-                    <div class=" col-12 col-md-10 col-lg-9 pt-5 p-3 px-md-5">
-                <div class="row">
-                    <div class="col-md-8 text-left">
-                        <p class="font-monorope-1">Welcome to Mondson Trucking</p>
-                        <h1 class="display-2 main-heading">Speedy, Reliable Delivery for Your Freight</h1>
-                        <p class="sec1-para">At Mondson Trucking, We deliver your freight quickly and reliably,
-                            ensuring your goods reach their destination safely and on time.</p>
-                    </div>
+            <div class="container-fluid bg-img-1 h-100 h-md-75 h-lg-50">
+                <div class="container">
 
-                    <div class="row my-3">
-                        <div class=" col-6 col-md-6 col-lg-3 pb-3 pb-md-0">
-                            <button type="button" class="sec1-btn1  mb-md-0">Get
-                                Started</button>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-3 pb-3 pb-lg-0">
-                            <button type="button" class="sec1-btn2">Our Services</button>
+
+                    <div class=" row ">
+                        <div class=" col-12 col-md-10 col-lg-9 py-5">
+                            <div class="row">
+                                <div class="col-md-8 text-left">
+                                    <p class="font-monorope-1">Welcome to Mondson Trucking</p>
+                                    <h1 class="display-2 main-heading">Speedy, Reliable Delivery for Your Freight</h1>
+                                    <p class="sec1-para">At Mondson Trucking, We deliver your freight quickly and
+                                        reliably,
+                                        ensuring your goods reach their destination safely and on time.</p>
+                                </div>
+
+                                <div class="row my-3">
+                                    <div class=" col-6 col-md-6 col-lg-3 pb-3 pb-md-0">
+                                        <button type="button" class="sec1-btn1  mb-md-0">Get
+                                            Started</button>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3 pb-3 pb-lg-0">
+                                        <button type="button" class="sec1-btn2">Our Services</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <!-- 2nd section -->
         <section class="py-5" style="background-color:#0B1117 ;">
@@ -1320,21 +1360,22 @@
 
     </main>
 
-    <footer class="py-5" style="background-color: #0B1117;">
+    <footer class="py-5 footer" style="background-color: #0B1117;">
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 text-center">
                         <img src="./assets/logo.webp" alt="" width="200px">
-                        <p class="fs-4">Mondson Trucking, a family-owned Georgia business, excels in OTR transportation
+                        <p class="footer-p">Mondson Trucking, a family-owned Georgia business, excels in OTR
+                            transportation
                             with a fleet of 53-foot reefer units, ensuring reliable delivery of fresh freight.</p>
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="row">
-                            <div class="col">
-                                <p class="fs-3 font-monospace">EXPLORE</p>
+                            <div class="col-12 col-md-4">
+                                <h3 class="">EXPLORE</h3>
                                 <ul class="list-unstyled">
-                                    <li>Home</li>
+                                    <li class="hm">Home</li>
                                     <li>About Us</li>
                                     <li>Services</li>
                                     <li>Why Choose Us</li>
@@ -1342,8 +1383,8 @@
                                     <li>Contact Us</li>
                                 </ul>
                             </div>
-                            <div class="col">
-                                <p class="fs-3 font-monospace">SERVICES</p>
+                            <div class="col-12 col-md-4">
+                                <h3 class="">SERVICES</h3>
                                 <ul class="list-unstyled">
                                     <li>Dry Van</li>
                                     <li>Drop Equipment</li>
@@ -1353,10 +1394,10 @@
                                     <li>Flatbed</li>
                                 </ul>
                             </div>
-                            <div class="col">
-                                <p class="fs-3 font-monospace">
+                            <div class="col-12 col-md-4">
+                                <h3 class="">
                                     FOLLOW US
-                                </p>
+                                </h3>
                                 <ul class="list-unstyled">
                                     <li>Instagram</li>
                                     <li>Linkedin</li>
