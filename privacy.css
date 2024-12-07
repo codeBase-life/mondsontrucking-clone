@@ -80,6 +80,13 @@ h2{
     font-size: 25px;
     line-height: 70px;
 }
+@media (max-width: 768px) {
+    h2 {
+        line-height: 35px;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+}
 
 /* all ul */
 ul.main-ul li{
