@@ -1,0 +1,101 @@
+/*  navbar*/
+.font-michroma {
+    font-family: "Michroma", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: x-small;
+}
+
+.button-rounded {
+    background-color: red;
+    padding: 3px 25px 5px 25px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.button-rounded:hover {
+    transition: 0.3s;
+    color: black;
+    background-color: #ffffff;
+}
+
+.policy-page {
+    opacity: 0.5;
+}
+
+.policy-page:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* section1 */
+
+.main-h2{
+    font-family: "Michroma", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 45px;
+}
+@media (max-width: 768px) {
+    .main-h2 {
+        font-size: 35px;
+    }
+}
+.link-home, .policy{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+.link-home, .policy:hover{
+    color: #FF493B;
+   transition: 0.3s;
+}
+.content-box{
+   height: 400px;
+}
+@media(max-width: 768px){
+    .content-box{
+       height: 250px;
+    }
+}
+
+
+p{
+    font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-size: 16px;
+  font-style: normal;
+line-height: 30px;
+}
+
+/* all h2s */
+h2{
+    font-family: "Michroma", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+/* all ul */
+ul.main-ul li{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* mail hover */
+.mail{
+    color: #FF493B;
+    text-decoration: none;
+}
+.mail:hover{
+    color: white;
+    transition: 0.3s;
+}
