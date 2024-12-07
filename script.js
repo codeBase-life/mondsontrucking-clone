@@ -1,152 +1,233 @@
 gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".box", {
-  scrollTrigger: ".box", // start animation when ".box" enters the viewport
-  y: 100,
-  // opacity: 0,
-  duration: 3,
+const paras = document.querySelectorAll(".animate-first-para");
+paras.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      // start: "top 80%", // Adjust as needed
+      // end: "bottom 20%", // Adjust as needed
+      toggleActions: "play pause play play", // Adjust as needed
+    },
+    y: 25,
+    duration: 2,
+    opacity: 0,
+  });
 });
 
-gsap.from(".box1", {
-  scrollTrigger: ".box1", // start animation when ".box" enters the viewport
-  y: 200,
-  opacity: 0,
-  duration: 3,
-});
-gsap.from(".box2", {
-  scrollTrigger: ".box2", // start animation when ".box" enters the viewport
-  y: 100,
-  opacity: 0,
-  duration: 2,
+// headings single
+
+const headings = document.querySelectorAll(".animate-headings");
+headings.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 80,
+    duration: 2,
+  });
 });
 
-gsap.from(".box3", {
-  scrollTrigger: ".box3", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 1,
+// small paragraphs
+const paras1 = document.querySelectorAll(".animate-para2");
+paras1.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 30,
+    duration: 2,
+    opacity: 0,
+  });
 });
 
-gsap.from(".box4", {
-  scrollTrigger: ".box4", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 2,
+// buttons
+const buttons = document.querySelectorAll(".animate-btn");
+buttons.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause complete play",
+    },
+    y: 30,
+    duration: 2,
+    opacity: 0,
+  });
 });
 
-gsap.from(".box5", {
-  scrollTrigger: ".box5", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 3,
-});
-gsap.from(".box6", {
-  scrollTrigger: ".box6", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 1,
-});
-gsap.from(".box7", {
-  scrollTrigger: ".box7", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 2,
-});
-gsap.from(".box8", {
-  scrollTrigger: ".box8", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 3,
+const slow_btns = document.querySelectorAll(".animate-btn-slow");
+slow_btns.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 60,
+    duration: 1.3,
+    opacity: 0,
+  });
 });
 
-gsap.from(".box9", {
-  scrollTrigger: ".box9", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 1,
-});
-gsap.from(".box10", {
-  scrollTrigger: ".box10", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 2,
-});
-gsap.from(".box11", {
-  scrollTrigger: ".box11", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 3,
+// big imag
+const big_img = document.querySelectorAll(".animate-img");
+big_img.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 0,
+    duration: 2,
+    opacity: 0,
+  });
 });
 
-gsap.from(".box12", {
-  scrollTrigger: ".box12", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 2,
-});
-gsap.from(".box13", {
-  scrollTrigger: ".box13", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 3,
-});
-
-gsap.from(".five-box1", {
-  scrollTrigger: ".five-box1", // start animation when ".box" enters the viewport
-  y: 50,
-  opacity: 0,
-  duration: 3,
+// 2 boxes
+const boxe1 = document.querySelectorAll(".animate-box1-slow");
+boxe1.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 50,
+    duration: 1.5,
+    opacity: 0,
+  });
 });
 
-gsap.from(".five-box2", {
-  scrollTrigger: ".five-box2", // start animation when ".box" enters the viewport
-  y: 30,
-  opacity: 0,
-  duration: 2,
-});
-gsap.from(".five-box3", {
-  scrollTrigger: ".five-box3", // start animation when ".box" enters the viewport
-  y: 30,
-  opacity: 0,
-  duration: 3,
-});
-gsap.from(".five-box4", {
-  scrollTrigger: ".five-box4", // start animation when ".box" enters the viewport
-  y: 30,
-  opacity: 0,
-  duration: 3,
-});
-gsap.from(".five-box5", {
-  scrollTrigger: ".five-box5", // start animation when ".box" enters the viewport
-  y: 30,
-  opacity: 0,
-  duration: 3,
-});
-gsap.from(".five-box6", {
-  scrollTrigger: ".five-box6", // start animation when ".box" enters the viewport
-  y: 30,
-  opacity: 0,
-  duration: 3,
-});
-gsap.from(".five-box7", {
-  scrollTrigger: ".five-box7",
-
-  y: 30,
-  opacity: 0,
-  duration: 3,
+const boxe2 = document.querySelectorAll(".animate-box2-fast");
+boxe2.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 70,
+    duration: 0.9,
+    opacity: 0,
+  });
 });
 
-gsap.from(".six-box1", {
-  scrollTrigger: ".five-box1",
+// 9 boxes
 
-  y: 30,
-  opacity: 0,
-  duration: 3,
+const col1 = document.querySelectorAll(".animate-row1-col1");
+col1.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 40,
+    duration: 0.9,
+    opacity: 0,
+  });
 });
-gsap.from(".seven-box1", {
-  scrollTrigger: ".seven-box1",
 
-  y: 30,
-  opacity: 0,
-  duration: 3,
+const col2 = document.querySelectorAll(".animate-row1-col2");
+col2.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 70,
+    duration: 1.2,
+    opacity: 0,
+  });
+});
+
+const col3 = document.querySelectorAll(".animate-row1-col3");
+col3.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 100,
+    duration: 1.5,
+    opacity: 0,
+  });
+});
+
+// 4 boxes
+const box1 = document.querySelectorAll(".animate-row1");
+box1.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 100,
+    duration: 0.9,
+    opacity: 0,
+  });
+});
+
+const box2 = document.querySelectorAll(".animate-row2");
+box2.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 50,
+    duration: 1.5,
+    opacity: 0,
+  });
+});
+
+// social icons
+const phone = document.querySelectorAll(".animate-phone");
+phone.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 100,
+    duration: 1,
+    opacity: 0,
+  });
+});
+
+const email = document.querySelectorAll(".animate-mail");
+email.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 100,
+    duration: 1.5,
+    opacity: 0,
+  });
+});
+
+// privacy policy
+const privacy = document.querySelectorAll(".animate-privacy");
+privacy.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 100,
+    duration: 1,
+    opacity: 0,
+  });
+});
+
+const content = document.querySelectorAll(".animate-privacy-content");
+content.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    y: 50,
+    duration: 1.5,
+    opacity: 0,
+  });
 });
