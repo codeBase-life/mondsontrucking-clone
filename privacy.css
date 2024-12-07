@@ -1,3 +1,35 @@
+/* before navbar */
+.font-monorope {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: smaller;
+    color: white;
+    margin: 0;
+}
+.custom-icon {
+
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 6px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+
+    height: 30px;
+
+
+}
+
+.custom-icon:hover {
+
+    background-color: red;
+    transition: 0.3s;
+}
+
 /*  navbar*/
 .font-michroma {
     font-family: "Michroma", sans-serif;
@@ -48,8 +80,13 @@
     font-style: normal;
     font-size: 16px;
     line-height: 30px;
+    color:white
 }
-.link-home, .policy:hover{
+.link-home:hover{
+    color: #FF493B;
+    transition: 0.3s;
+}
+.policy:hover{
     color: #FF493B;
    transition: 0.3s;
 }
@@ -104,5 +141,54 @@ ul.main-ul li{
 }
 .mail:hover{
     color: white;
+    transition: 0.3s;
+}
+/* 3 boxes */
+.three-box h3{
+    font-family: "Michroma", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+/* footer para */
+
+.footer-p{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 20px 0px;
+}
+
+.footer h3{
+    font-family: "Michroma", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+}
+.footer ul li{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 60px;
+}
+
+.footer ul li:hover{
+    color: #FF493B;
+    transition: 0.3s;
+}
+
+/* footer btm */
+
+.footer-btm-link{
+    color: white;
+}
+.footer-btm-link:hover{
+    color: #FF493B;
     transition: 0.3s;
 }
