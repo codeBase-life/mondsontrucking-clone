@@ -231,3 +231,33 @@ content.forEach((element) => {
     opacity: 0,
   });
 });
+
+// section-2
+//  to 25
+gsap.from("#inc_number1", {
+  innerText: 0,
+  duration: 2,
+  snap: {
+    innerText: 1,
+  },
+});
+// to 950
+gsap.from("#inc_number2", {
+  innerText: 0,
+  duration: 1,
+  snap: {
+    innerText: 1,
+  },
+});
+// to 1.5
+gsap.from(
+  "#inc_number3",
+
+  {
+    innerText: 1,
+    duration: 2,
+    snap: {
+      innerText: 0.1,
+    },
+  }
+);
