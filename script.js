@@ -233,6 +233,18 @@ content.forEach((element) => {
 });
 
 // section-2
+const numbers = document.querySelectorAll(".inc-num1");
+numbers.forEach((element) => {
+  gsap.from(element, {
+    scrollTrigger: {
+      trigger: element,
+      toggleActions: "play pause play play",
+    },
+    // y: 50,
+    duration: 1.6,
+    opacity: 0,
+  });
+});
 //  to 25
 gsap.from("#inc_number1", {
   innerText: 0,
@@ -244,7 +256,7 @@ gsap.from("#inc_number1", {
 // to 950
 gsap.from("#inc_number2", {
   innerText: 0,
-  duration: 1,
+  duration: 2.5,
   snap: {
     innerText: 1,
   },
